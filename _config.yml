@@ -1,2 +1,5 @@
 theme: jekyll-theme-minimal
 title: Chonsawat's Portfolio
+
+show_downloads: true
+logo: /assets/img/chonsawat.png
