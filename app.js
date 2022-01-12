@@ -1,9 +1,10 @@
-const App = {
-    data() {
+new Vue({
+  el: '#app',
+  vuetify: new Vuetify(),
+  data() {
       return {
-        name: "Chonsawat Nakanam"
+        name: "Chonsawat Nakanam",
+        hello: "Hello World!!"
       }
-    }
-}
-  
-Vue.createApp(App).mount('#app')
+  },
+})
