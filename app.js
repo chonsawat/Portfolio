@@ -4,7 +4,17 @@ new Vue({
   data() {
       return {
         name: "Chonsawat Nakanam",
-        hello: "Hello World!!"
+        title: "Chonsawat's Portfolio",
+        about: "สวัสดีครับ😊 ผมชนม์สวัสดิ์ นาคนาม นักศึกษาวิทยาการคอมพิวเตอร์ วิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่นครับ",
+        description: "",
+        contact: {
+          github: "https://github.com/chonsawat",
+          linkedIn: "https://www.linkedin.com/in/chonsawat-nakanam-0a09241b0",
+          email: "chonsawat.nakanam@kkumail.com",
+          facebook: "https://www.facebook.com/chonsawt.naknam",
+          instagram: "https://www.instagram.com/cmmbit/",
+          twitter: "https://twitter.com/CNakanam"
+        },
       }
   },
 })
