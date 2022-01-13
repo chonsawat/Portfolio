@@ -15,6 +15,13 @@ new Vue({
           instagram: "https://www.instagram.com/cmmbit/",
           twitter: "https://twitter.com/CNakanam"
         },
+        programmingList: [
+          { id: 0, text: 'Python' },
+          { id: 1, text: 'Java Script' },
+          { id: 2, text: 'Java' },
+          { id: 3, text: 'C' },
+        ],
+        cardShow: false,
       }
   },
 })
