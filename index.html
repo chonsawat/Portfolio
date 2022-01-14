@@ -29,112 +29,13 @@
             <p>{{about}}</p>
         </v-container>
 
-        <!-- TODO: Button to my Project -->
+        <!-- Fetch Cards -->
         <v-container>
-            <!-- ChestXray -->
             <v-row>
-            <v-col>
-            <v-card max-width="350">
-                <v-img src="https://images.unsplash.com/photo-1631563019701-efcf403bc5fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="200px"></v-img>
-                <v-card-title>ChestXray</v-card-title>
-                <v-card-subtitle>Deep Neural Network, Multi-label Classification</v-card-subtitle>
-                <v-card-actions>
-                    <a href="https://colab.research.google.com/drive/1wKeS6WROIFh5lFDp1QRJsYe47S3aEBtg?usp=sharing" target="_blank"> <v-btn dark color="pink"> 🔍 EXplore </v-btn> </a>
-                    <v-spacer></v-spacer>
-                    <v-btn icon @click="cardShow = !cardShow">
-                        <v-icon>{{ cardShow ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                    <div v-show="cardShow">
-                        <v-divider></v-divider>
-                        <v-card-text>
-                        โปรเจ็ครายวิชา Research Methodology เกี่ยวกับการจำแนกประเภทแบบหลายป้ายด้วยภาพรังสีทรวงอก
-                        </v-card-text>
-                    </div>
-                </v-expand-transition>
-            </v-card>
-            </v-col>
-
-
-            <!-- TODO: Computer Network -->
-            <!-- https://github.com/chonsawat/Computer-Network -->
-            <v-col>
-            <v-card max-width="350">
-                <v-img src="https://images.unsplash.com/photo-1562408590-e32931084e23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" height="200px"></v-img>
-                <v-card-title>Computer Network</v-card-title>
-                <v-card-subtitle>Deep Neural Network, Multi-label Classification</v-card-subtitle>
-                <v-card-actions>
-                    <a href="#" target="_blank"> <v-btn dark color="pink"> 🔍 EXplore </v-btn> </a>
-                    <v-spacer></v-spacer>
-                    <v-btn icon @click="cardShow = !cardShow">
-                        <v-icon>{{ cardShow ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                    <div v-show="cardShow">
-                        <v-divider></v-divider>
-                        <v-card-text>
-                        โปรเจ็ครายวิชา Research Methodology เกี่ยวกับการจำแนกประเภทแบบหลายป้ายด้วยภาพรังสีทรวงอก
-                        </v-card-text>
-                    </div>
-                </v-expand-transition>
-            </v-card>
-            </v-col>
-
-            <!-- TODO: Data Engineer -->
-            <!-- https://github.com/chonsawat/Data-Engineer -->
-            <v-col>
-            <v-card max-width="350">
-                <v-img src="https://images.unsplash.com/photo-1634942536846-e9863ef9e78f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" height="200px"></v-img>
-                <v-card-title>Data Engineer</v-card-title>
-                <v-card-subtitle>Deep Neural Network, Multi-label Classification</v-card-subtitle>
-                <v-card-actions>
-                    <a href="#" target="_blank"> <v-btn dark color="pink"> 🔍 EXplore </v-btn> </a>
-                    <v-spacer></v-spacer>
-                    <v-btn icon @click="cardShow = !cardShow">
-                        <v-icon>{{ cardShow ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                    </v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                    <div v-show="cardShow">
-                        <v-divider></v-divider>
-                        <v-card-text>
-                        โปรเจ็ครายวิชา Research Methodology เกี่ยวกับการจำแนกประเภทแบบหลายป้ายด้วยภาพรังสีทรวงอก
-                        </v-card-text>
-                    </div>
-                </v-expand-transition>
-            </v-card>
-            </v-col>
-
-            </v-row>
-
-            <!-- TODO: Mini Drink Shop -->
-            <!-- https://github.com/chonsawat/MiniDrinkShop -->
-            <v-row>
-                <v-col>
-                <v-card max-width="350">
-                    <v-img src="https://images.unsplash.com/photo-1625726124021-feb7ec3f281b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" height="200px"></v-img>
-                    <v-card-title>Mini Drink Shop</v-card-title>
-                    <v-card-subtitle>Deep Neural Network, Multi-label Classification</v-card-subtitle>
-                    <v-card-actions>
-                        <a href="#" target="_blank"> <v-btn dark color="pink"> 🔍 EXplore </v-btn> </a>
-                        <v-spacer></v-spacer>
-                        <v-btn icon @click="cardShow = !cardShow">
-                            <v-icon>{{ cardShow ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                        </v-btn>
-                    </v-card-actions>
-                    <v-expand-transition>
-                        <div v-show="cardShow">
-                            <v-divider></v-divider>
-                            <v-card-text>
-                            โปรเจ็ครายวิชา Research Methodology เกี่ยวกับการจำแนกประเภทแบบหลายป้ายด้วยภาพรังสีทรวงอก
-                            </v-card-text>
-                        </div>
-                    </v-expand-transition>
-                </v-card>
+                <v-col cols="4" v-for="(data) of projectCards">
+                    <project-card :data="data"></project-card>
                 </v-col>
-                </v-row>            
+            </v-row>
         </v-container>
 
         <!-- List -->
@@ -154,8 +55,6 @@
             <h4>My Projects</h4>
             <a class="icon-link" :href="contact.github" target="_blank"><ion-icon name="logo-github" size="large"></ion-icon></a>
         </v-container>
-        
-        
 
         <!-- Contact -->
         <v-container>
