@@ -18,7 +18,7 @@ Vue.component('project-card', {
         }
     },
     template: /*html*/`
-    <v-card max-width="350" max-height="500">
+    <v-card>
         <v-img :src="data.img" height="200px"></v-img>
         <v-card-title>{{data.title}}</v-card-title>
         <v-card-subtitle>{{data.subTitle}}</v-card-subtitle>

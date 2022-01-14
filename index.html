@@ -32,8 +32,15 @@
 
         <!-- Fetch Cards -->
         <v-container>
+            <!-- FIXME: Make Responsive in mobile -->
             <v-row>
-                <v-col cols="4" v-for="(data) of projectCards">
+                <v-col class="d-sm-none" cols="12" v-for="(data) of projectCards">
+                    <project-card :data="data"></project-card>
+                </v-col>
+            </v-row>
+
+            <v-row>
+                <v-col class="d-none d-sm-flex" cols="4" v-for="(data) of projectCards">
                     <project-card :data="data"></project-card>
                 </v-col>
             </v-row>
