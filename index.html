@@ -16,13 +16,14 @@
     <v-main>
         <!-- Toolbar -->
         <v-app-bar app color="pink" elevation="6">
-            <v-container>
-            <v-row justify="center">
-                <h1 class="white--text">RESUME</h1>
-            </v-row>
-            </v-container>
+        <v-container>
+        <v-row justify="center">
+            <h1 class="white--text">RESUME</h1>
+        </v-row>
+        </v-container>
         </v-app-bar>
 
+        <v-content-app>
         <!-- Description -->
         <v-container>
             <h1>{{title}}</h1>
@@ -55,16 +56,20 @@
             <h4>My Projects</h4>
             <a class="icon-link" :href="contact.github" target="_blank"><ion-icon name="logo-github" size="large"></ion-icon></a>
         </v-container>
+        </v-content-app>
 
         <!-- Contact -->
+        <v-footer app>
         <v-container>
-            <h4>Contact:</h4>
-            <a class="icon-link" :href="contact.linkedIn" target="_blank"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
-            <a class="icon-link" :href="'mailto:' + contact.email" target="_blank"><ion-icon name="mail-open" size="large"></ion-icon></a>
-            <a class="icon-link" :href="contact.facebook" target="_blank"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
-            <a class="icon-link" :href="contact.instagram" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
-            <a class="icon-link" :href="contact.twitter" target="_blank"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
+        <v-row justify="center">
+            <a class="icon-link mx-3" :href="contact.linkedIn" target="_blank"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
+            <a class="icon-link mx-3" :href="'mailto:' + contact.email" target="_blank"><ion-icon name="mail-open" size="large"></ion-icon></a>
+            <a class="icon-link mx-3" :href="contact.facebook" target="_blank"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+            <a class="icon-link mx-3" :href="contact.instagram" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+            <a class="icon-link mx-3" :href="contact.twitter" target="_blank"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
+        </v-row>
         </v-container>
+        </v-footer>
     </v-main>
     </v-app>
 

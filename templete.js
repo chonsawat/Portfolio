@@ -18,12 +18,12 @@ Vue.component('project-card', {
         }
     },
     template: /*html*/`
-    <v-card max-width="350">
+    <v-card max-width="350" max-height="500">
         <v-img :src="data.img" height="200px"></v-img>
         <v-card-title>{{data.title}}</v-card-title>
         <v-card-subtitle>{{data.subTitle}}</v-card-subtitle>
         <v-card-actions>
-            <a :href="data.link" target="_blank"> <v-btn text dark color="pink"> 🔍 EXplore </v-btn> </a>
+            <a :href="data.link" target="_blank"> <v-btn dark color="pink"> 🔍 EXplore </v-btn> </a>
             <v-spacer></v-spacer>
             <v-btn icon @click="cardShow = !cardShow">
                 <v-icon>{{ cardShow ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
